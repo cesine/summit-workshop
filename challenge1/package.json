@@ -11,5 +11,8 @@
     "hapi": "16.x.x",
     "inert": "4.x.x",
     "websocket-stream": "3.x.x"
+  },
+  "scripts": {
+    "start": "PORT=8080 node lib/index.js"
   }
 }

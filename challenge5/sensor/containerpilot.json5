@@ -42,7 +42,7 @@
     },
     {
       name: 'serializer',
-      interval: 3
+      interval: 1
     }
   ]
 }

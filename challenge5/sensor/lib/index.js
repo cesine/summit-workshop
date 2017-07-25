@@ -37,7 +37,11 @@ function setupNats() {
 function writeData (data) {
   // TODO: Update me with the serializer object that should contain address and port
   const serializer = Piloted.service('serializer');
-  console.log('serializer', serializer);
+
+  if (!serializer) {
+    console.error('Serializer not found');
+    return;
+  }
 
   Wreck.post(`http://${serializer.address}:${serializer.port}/write/${internals.type}`, { payload: data }, (err) => {
     if (err) {

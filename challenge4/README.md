@@ -35,6 +35,10 @@ gateway_1   | 2017/07/25 21:19:12 error: [EG:config]  Error: ENOENT: no such fil
 ```
 
 
+```
+docker-compose down
+```
+
 __hint__ ContainerPilot documentation can be found at https://www.joyent.com/containerpilot/docs
 
 __hint__ You need to add a job to execute `generate-config`

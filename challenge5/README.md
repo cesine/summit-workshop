@@ -42,6 +42,24 @@ $ docker logs --tail 10 696b9dbb6030
 2017/07/25 21:33:59   reformat: [Function] }
 ```
 
+```
+$ docker-compose restart
+Restarting challenge5_gateway_1 ... done
+Restarting challenge5_serializer_1 ... done
+Restarting challenge5_temperature_1 ... done
+Restarting challenge5_nats_1 ... done
+Restarting challenge5_frontend_1 ... done
+Restarting challenge5_influxdb_1 ... done
+Restarting challenge5_smartthings_1 ... done
+Restarting challenge5_consul_1 ... done
+Restarting challenge5_redis_1 ... done
+```
+
+
+`docker-compose down`
+
+
+
 
 __hint__ ContainerPilot documentation can be found at https://www.joyent.com/containerpilot/docs
 

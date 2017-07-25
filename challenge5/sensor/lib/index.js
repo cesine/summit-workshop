@@ -36,9 +36,10 @@ function setupNats() {
 
 function writeData (data) {
   // TODO: Update me with the serializer object that should contain address and port
-
-  
-
+  const serializer = {
+    address: 'http://serializer',
+    port: '10000'
+  };
 
   Wreck.post(`http://${serializer.address}:${serializer.port}/write/${internals.type}`, { payload: data }, (err) => {
     if (err) {

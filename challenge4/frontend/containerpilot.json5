@@ -22,6 +22,9 @@
                   '-retry-max', '10',
                   '-retry-interval', '10s'],
       restarts: 'unlimited'
+    }, {
+      name: 'healthcheck',
+      exec: 'bash bin/generate-config'
     }
   ]
 }

@@ -6,3 +6,6 @@ COPY package.json /opt/app/
 COPY lib/*.js /opt/app/lib/
 COPY lib/public /opt/app/lib/public
 WORKDIR /opt/app
+RUN npm install
+# RUN PORT=8080 node lib/index.js
+CMD ["node", "."]

@@ -25,11 +25,23 @@
         source: 'watch.nats',
         each: 'changed'
       }
+    },
+    {
+      name: 'onchange-serializer',
+      exec: 'pkill -SIGHUP node',
+      when: {
+        source: 'watch.serializer',
+        each: 'changed'
+      }
     }
   ],
   watches: [
     {
       name: 'nats',
+      interval: 3
+    },
+    {
+      name: 'serializer',
       interval: 3
     }
   ]

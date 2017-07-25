@@ -12,7 +12,8 @@ serviceEndpoints:
   frontend:
     urls:
       #### UPDATE ME ####
-      # - http://server:port #
+      - http://fronend1:8080
+      - http://fronend2:8080
 policies:
   - proxy
 pipelines:

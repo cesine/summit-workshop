@@ -5,7 +5,8 @@ services:
     ports:
       - "8080:8080"
     links:
-      ### UPDATE ME ###
+      - frontend1
+      - frontend2
     restart: always
   frontend1:
     build: ./frontend
